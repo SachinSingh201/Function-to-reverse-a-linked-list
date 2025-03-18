@@ -19,7 +19,7 @@ class Linked_list:
 
         self.n = self.n +1 
 
-        
+
     def reverse_linked_list(self):
         prev_node = None
         current = self.head
@@ -32,8 +32,10 @@ class Linked_list:
             current = next_node
 
         self.head = prev_node
-        return print("After reversing the linked list :\n{}".format(l))  
-   def __str__(self):
+        return print("After reversing the linked list :\n{}".format(l))   
+
+
+    def __str__(self):
         current = self.head
         result = ''
         while current != None:
@@ -50,3 +52,7 @@ l.insert_head(2)
 l.insert_head(1)
 l.reverse_linked_list()
 print(l)
+
+
+
+
